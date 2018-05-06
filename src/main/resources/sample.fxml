@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="884.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.sda.controllers.Controller">
+   <top>
+      <Label text="Menu" BorderPane.alignment="CENTER" />
+   </top>
+   <left>
+      <VBox prefHeight="624.0" prefWidth="228.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="21.0" prefWidth="170.0" text="Wybierz produkty" />
+            <ListView fx:id="itemList" prefHeight="528.0" prefWidth="235.0" />
+            <Button fx:id="addOrderButton" mnemonicParsing="false" text="Dodaj do zamówienia" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Twoje zamówienie" />
+            <ListView fx:id="yourItemList" prefHeight="582.0" prefWidth="305.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Kwota do zaplaty" />
+                  <Button mnemonicParsing="false" text="Zatwierdź zamóienie" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <right>
+      <VBox prefHeight="545.0" prefWidth="351.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="23.0" prefWidth="69.0" text="Twoj dane" />
+            <HBox prefHeight="69.0" prefWidth="351.0">
+               <children>
+                  <CheckBox mnemonicParsing="false" prefHeight="21.0" prefWidth="127.0" text="Osoba fizyczna" />
+                  <CheckBox mnemonicParsing="false" text="Firma" />
+               </children>
+            </HBox>
+            <TextField prefHeight="64.0" prefWidth="351.0" text="imie / nazwa firmy" />
+            <TextField prefHeight="68.0" prefWidth="351.0" text="nazwisko / rodzaj firmy" />
+            <TextField prefHeight="69.0" prefWidth="351.0" text="Adres" />
+            <TextField prefHeight="76.0" prefWidth="351.0" text="Pesel / NIP" />
+            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="99.0" text="Zapisz dane" />
+         </children>
+      </VBox>
+   </right>
+   <bottom>
+      <Button mnemonicParsing="false" text="Przygotuj fakture" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
