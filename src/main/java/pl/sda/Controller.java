@@ -1,9 +1,10 @@
-package pl.sda.controllers;
+package pl.sda;
 
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
+import javafx.stage.Stage;
 import pl.sda.model.Item;
 
 import javax.persistence.EntityManager;
